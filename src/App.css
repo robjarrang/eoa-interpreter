@@ -1,0 +1,187 @@
+/* Base styles */
+body {
+  background-color: #EEF2FB;
+  color: #EEF2FB;
+  margin: 0;
+}
+
+/* App component */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #59DBCA;
+}
+
+/* Header styles */
+.app-header {
+  background-color: #080043;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+.navbar {
+  background-color: #080043;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #59DBCA;
+}
+
+.navbar-brand:hover {
+  color: #59DBCA;
+}
+
+/* Adjust main content area */
+.App > :nth-child(2) {
+  margin-top: 60px;
+}
+
+/* Card styles */
+.card {
+  background-color: #080043;
+  border: none;
+  border-radius: 20px;
+}
+
+.card-header {
+  background-color: #080043;
+  color: #59DBCA;
+  font-weight: bold;
+  border: none;
+  font-size: 22px;
+  border-radius: 20px !important;
+  padding-top: 20px;
+}
+
+/* Table styles */
+.table {
+  color: #EEF2FB;
+  border: none;
+}
+
+.table-dark {
+  background-color: #004063;
+}
+
+/* Form styles */
+.form-control {
+  background-color: #ffffff;
+  color: #080043;
+  border: none;
+}
+
+.form-control:focus {
+  background-color: #ffffff;
+  color: #080043;
+}
+
+/* Chart styles */
+.recharts-surface {
+  background-color: #004063;
+  border: none;
+}
+
+.recharts-text {
+  fill: #EEF2FB;
+}
+
+.recharts-tooltip-wrapper {
+  background-color: #080043 !important;
+  border: none;
+}
+
+.recharts-tooltip-item-list {
+  color: #EEF2FB !important;
+}
+
+/* Typography */
+h6 {
+  color: #EEF2FB;
+}
+
+label {
+  color: #080043;
+}
+
+/* Animations */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.file-upload-input {
+  display: none;
+}
+
+.export-button {
+  background-color: #59DBCA;
+  border-color: #59DBCA;
+  color: #080043;
+  transition: background-color 0.3s ease;
+}
+
+.export-button:hover {
+  background-color: #4bc0b0;
+  border-color: #4bc0b0;
+  color: #080043;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .text-lg-end {
+    text-align: left !important;
+    margin-top: 1rem;
+  }
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #0a0056;
+  border-color: #0a0056;
+}
+
+.btn-success {
+  background-color: #59DBCA;
+  border-color: #59DBCA;
+  color: #080043;
+}
+
+.btn-success:hover, .btn-success:focus {
+  background-color: #4bc0b0;
+  border-color: #4bc0b0;
+  color: #080043;
+}
